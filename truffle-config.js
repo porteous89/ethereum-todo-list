@@ -6,11 +6,15 @@ module.exports = {
       network_id: "*",
     },
   },
-  solc: {
-    optimizer: {
-      enabled: true,
-      runs: 200,
+  compilers: {
+    solc: {
+      version: "^0.5.0", // Change this to your solidity version
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200,
+        },
+      },
     },
   },
 };
-
